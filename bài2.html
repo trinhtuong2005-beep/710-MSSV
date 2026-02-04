@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký người dùng</title>
+    <link rel="stylesheet" href="form-style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <div class="form-header">
+                <h1>📝 Đăng ký tài khoản</h1>
+                <p>Tham gia cùng chúng tôi</p>
+            </div>
+            
+            <form id="registerForm" novalidate>
+                <div class="form-group">
+                    <label for="name">
+                        👤 Họ và tên *
+                    </label>
+                    <input type="text" id="name" 
+                           placeholder="Nhập họ và tên đầy đủ"
+                           required
+                           minlength="2"
+                           maxlength="50">
+                    <div class="error-message" id="nameError"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">
+                        📧 Email *
+                    </label>
+                    <input type="email" id="email" 
+                           placeholder="example@gmail.com"
+                           required>
+                    <div class="error-message" id="emailError"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">
+                        🔒 Mật khẩu *
+                    </label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" 
+                               placeholder="Ít nhất 8 ký tự"
+                               required
+                               minlength="8">
+                        <button type="button" class="toggle-password" id="togglePassword">
+                            👁️
+                        </button>
+                    </div>
+                    <div class="password-requirements">
+                        Mật khẩu phải có:
+                        <ul>
+                            <li id="reqLength">✓ Ít nhất 8 ký tự</li>
+                            <li id="reqUpper">✓ Chữ hoa</li>
+                            <li id="reqLower">✓ Chữ thường</li>
+                            <li id="reqNumber">✓ Số</li>
+                        </ul>
+                    </div>
+                    <div class="error-message" id="passwordError"></div>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">
+                        Tôi đồng ý với <a href="#" class="terms-link">Điều khoản dịch vụ</a> và 
+                        <a href="#" class="terms-link">Chính sách bảo mật</a> *
+                    </label>
+                    <div class="error-message" id="termsError"></div>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">
+                        🚀 Đăng ký ngay
+                    </button>
+                    <button type="button" class="reset-btn" id="resetBtn">
+                        🔄 Làm mới
+                    </button>
+                </div>
+                
+                <div class="success-message" id="successMessage" style="display: none;">
+                    ✅ Đăng ký thành công! Dữ liệu đã được lưu.
+                </div>
+            </form>
+            
+            <div class="users-list" id="usersList">
+                <h3>👥 Người dùng đã đăng ký</h3>
+                <div id="registeredUsers"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="form-script.js"></script>
+</body>
+</html>
