@@ -1,0 +1,67 @@
+Logic tư duy:
+Xử lý interval tránh memory leak:
+
+Luôn clear interval cũ trước khi tạo mới
+
+Clear interval khi pause/stop/reset
+
+Sử dụng clearInterval trong beforeunload
+
+Lưu trạng thái để khôi phục khi refresh
+
+Tích hợp với Domain/Hosting khi deploy:
+
+Đồng bộ thời gian server: Sử dụng API để lấy giờ chính xác
+
+Service Worker: Có thể cache timer để chạy offline
+
+Background sync: Đồng bộ trạng thái khi online lại
+
+Push notifications: Thông báo cross-device khi hết giờ
+
+Optimizations:
+
+Debounce các sự kiện input
+
+Sử dụng CSS animations thay vì JS khi có thể
+
+Lazy load âm thanh cảnh báo
+
+Progressive enhancement cho trình duyệt cũ
+
+Error handling:
+
+Try-catch khi đọc/ghi localStorage
+
+Fallback khi API time server fail
+
+Validation input người dùng
+
+Graceful degradation
+
+UX tốt:
+
+Visual feedback khi sắp hết giờ
+
+Multiple ways to control timer
+
+Auto-save và resume
+
+Responsive design
+
+Accessibility considerations
+
+Deploy considerations:
+
+Host trên GitHub Pages/Netlify với HTTPS
+
+Cấu hình CORS cho time API
+
+Sử dụng CDN cho assets
+
+Implement PWA features
+
+Analytics để track usage
+
+Backup state trên cloud storage
+
