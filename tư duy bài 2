@@ -1,0 +1,34 @@
+Logic tư duy:
+Xử lý sự kiện submit:
+
+Ngăn hành vi mặc định với preventDefault()
+
+Validate real-time và trên submit
+
+Hiển thị lỗi cụ thể cho từng trường
+
+Reset form sau khi submit thành công
+
+Bảo mật dữ liệu cục bộ:
+
+Mã hóa password bằng base64 (demo, thực tế dùng bcrypt)
+
+Kiểm tra email trùng lặp
+
+Escape HTML khi hiển thị dữ liệu từ LocalStorage
+
+Xóa dữ liệu nhạy cảm khi không cần thiết
+
+Có chức năng xóa user (với confirmation)
+
+UX/UI tốt:
+
+Password strength indicator real-time
+
+Toggle show/hide password
+
+Responsive design
+
+Hiệu ứng visual feedback
+
+Auto-hide success message
