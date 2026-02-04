@@ -1,0 +1,26 @@
+Logic tư duy:
+Xử lý input người dùng:
+
+Sử dụng escapeHtml() để tránh XSS injection
+
+Trim input để loại bỏ khoảng trắng thừa
+
+Chuyển về lowercase để tìm kiếm không phân biệt hoa thường
+
+Tối ưu tìm kiếm:
+
+Dùng debounce (300ms) để giảm số lần gọi hàm tìm kiếm
+
+Sử dụng hàm removeAccents() để tìm kiếm tiếng Việt không dấu
+
+Tìm kiếm cả trong tên và mô tả sản phẩm
+
+Cache kết quả nếu cần (có thể implement thêm)
+
+Performance:
+
+Sử dụng Grid layout responsive
+
+Virtual scrolling nếu danh sách dài (có thể implement thêm)
+
+Hiển thị loading indicator nếu dữ liệu lớn
