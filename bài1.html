@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sản phẩm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛒 Cửa hàng trực tuyến</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" 
+                       placeholder="Tìm kiếm sản phẩm..." 
+                       aria-label="Tìm kiếm sản phẩm">
+                <button id="searchBtn">🔍 Tìm kiếm</button>
+            </div>
+            <p class="product-count">Tổng số sản phẩm: <span id="totalProducts">0</span></p>
+        </header>
+
+        <main>
+            <div class="products-grid" id="productsContainer">
+                <!-- Sản phẩm sẽ được hiển thị bằng JavaScript -->
+            </div>
+            <div id="noResults" class="no-results" style="display: none;">
+                ❌ Không tìm thấy sản phẩm phù hợp
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
