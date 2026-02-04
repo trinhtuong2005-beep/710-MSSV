@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồng hồ đếm ngược</title>
+    <link rel="stylesheet" href="timer-style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="timer-card">
+            <div class="timer-header">
+                <h1>⏰ Đồng hồ đếm ngược</h1>
+                <p class="subtitle">Thời gian còn lại cho sự kiện</p>
+            </div>
+            
+            <div class="timer-display" id="timerDisplay">
+                <div class="time-section">
+                    <div class="time-value" id="minutes">10</div>
+                    <div class="time-label">Phút</div>
+                </div>
+                <div class="separator">:</div>
+                <div class="time-section">
+                    <div class="time-value" id="seconds">00</div>
+                    <div class="time-label">Giây</div>
+                </div>
+            </div>
+            
+            <div class="timer-progress">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            
+            <div class="timer-controls">
+                <button id="startBtn" class="control-btn start">
+                    ▶️ Bắt đầu
+                </button>
+                <button id="pauseBtn" class="control-btn pause" disabled>
+                    ⏸️ Tạm dừng
+                </button>
+                <button id="resetBtn" class="control-btn reset">
+                    🔄 Đặt lại
+                </button>
+                <button id="addTimeBtn" class="control-btn add-time">
+                    ⏱️ +1 phút
+                </button>
+            </div>
+            
+            <div class="timer-settings">
+                <div class="setting-group">
+                    <label for="timeInput">Thời gian (phút):</label>
+                    <input type="number" id="timeInput" min="1" max="60" value="10">
+                    <button id="setTimeBtn" class="set-btn">Đặt thời gian</button>
+                </div>
+                <div class="alert-settings
