@@ -51,4 +51,52 @@
                     <input type="number" id="timeInput" min="1" max="60" value="10">
                     <button id="setTimeBtn" class="set-btn">Đặt thời gian</button>
                 </div>
-                <div class="alert-settings
+                <div class="alert-settings">
+                    <label>
+                        <input type="checkbox" id="enableSound" checked>
+                        🔊 Bật âm thanh cảnh báo
+                    </label>
+                    <label>
+                        <input type="checkbox" id="enableNotification" checked>
+                        🔔 Bật thông báo trình duyệt
+                    </label>
+                </div>
+            </div>
+            
+            <div class="status-message" id="statusMessage">
+                Sẵn sàng để bắt đầu!
+            </div>
+        </div>
+        
+        <div class="server-time" id="serverTime">
+            ⚡ Đang đồng bộ thời gian...
+        </div>
+    </div>
+
+    <!-- Modal khi hết giờ -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>⏰ Thời gian đã hết!</h2>
+                <button class="modal-close" id="modalClose">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-icon">⌛</div>
+                <p>Đồng hồ đếm ngược đã kết thúc.</p>
+                <p>Bạn có muốn đặt lại thời gian không?</p>
+            </div>
+            <div class="modal-actions">
+                <button id="modalReset" class="modal-btn reset">Đặt lại ngay</button>
+                <button id="modalCloseBtn" class="modal-btn close">Đóng</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio cho cảnh báo -->
+    <audio id="alertSound" preload="auto">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-alarm-digital-clock-beep-989.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="timer-script.js"></script>
+</body>
+</html>
